@@ -1,0 +1,111 @@
+* {
+  font-size: 1em;
+  font-family: Verdana, sans-serif;
+}
+
+/* header */
+.header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  justify-content: space-between;
+}
+
+/* logo image */
+.image {
+  border-radius: 50%;
+  margin: 1em 1em 1em 1em;
+}
+
+.name {
+  color: #fff;
+  margin: 1em 1em 1em 1em;
+  font-size: 2.5em;
+}
+
+/* banner image */
+.bannerImage {
+  margin-top: 1%;
+  width: 100%;
+}
+
+/* main container */
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* cards for inside element */
+.one {
+  width: 30%;
+  border: 2px solid #ccc;
+  box-shadow: 0px 6px 6px -6px #000;
+  margin-top: 1%;
+  text-align: center;
+  padding: 1em;
+}
+
+.paragraph {
+  text-align: justify;
+}
+
+/* footer */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 1%;
+  padding: .5em;
+  font-size: 1.2em;
+}
+
+/* media queries for mobile view */
+@media (min-device-width:320px) and (max-device-width:480px) {
+  .image {
+    margin: 0.7em;
+  }
+
+  .name {
+    font-size: 1.8em;
+    margin: 1.5em 0.3em 0 0;
+  }
+
+  .bannerImage {
+    height: 150px;
+  }
+
+  .one {
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  .footer {
+    margin-top: 3%;
+  }
+}
+
+/* media queries for tablet view*/
+@media (min-device-width:481px) and (max-device-width:780px) {
+  .one {
+    width: 40%;
+    margin-top: 3%;
+  }
+
+  .footer {
+    margin-top: 3%;
+  }
+}
+
+/* media queries for ipad view */
+@media (min-device-width:781px) and (max-device-width:1200px) {
+  .one {
+    width: 27%;
+    margin-top: 2%;
+  }
+
+  .footer {
+    margin-top: 2%;
+  }
+}
